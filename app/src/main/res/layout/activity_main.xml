@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Doggy:
+          プログラミングでは、名前に統一感を持たせて管理しやすくしたり、分かりやすくしようという考え方があります！
+          View の id は snake_case（単語の頭文字を小文字にして、単語と単語を"_"で繋げる命名方式）で名付けよう！ -->
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
