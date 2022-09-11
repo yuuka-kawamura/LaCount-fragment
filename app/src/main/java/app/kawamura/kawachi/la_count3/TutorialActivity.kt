@@ -13,10 +13,11 @@ class TutorialActivity : AppCompatActivity() {
             ActivityTutorialBinding.inflate(layoutInflater).apply { setContentView(this.root) }
 
 
-
+        //🧸: Adapterが使えててGood！
         binding.viewPager.adapter = ViewPagerAdapter(this)
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
+        //🧸: 使っていない変数は消そう
         val maxItemCount: Int = binding.viewPager.adapter?.itemCount ?: 0
 
         binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
